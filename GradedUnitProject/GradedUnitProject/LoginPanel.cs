@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -13,10 +14,16 @@ namespace GradedUnitProject
 {
     public partial class LoginPanel : Form
     {
+        [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.dll", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsq, int wparam, int lparam);
+
         public LoginPanel()
         {
             InitializeComponent();
-            
+
+                
         }
 
         private void exit_Click(object sender, EventArgs e)
@@ -82,6 +89,12 @@ namespace GradedUnitProject
         {
             if(Program.debug)
             buttonLLogin.PerformClick();
+        }
+
+        private void topBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }

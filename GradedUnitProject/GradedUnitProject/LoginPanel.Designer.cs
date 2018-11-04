@@ -53,6 +53,7 @@
             this.topBar.Name = "topBar";
             this.topBar.Size = new System.Drawing.Size(400, 30);
             this.topBar.TabIndex = 0;
+            this.topBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.topBar_MouseDown);
             // 
             // trayButton
             // 
