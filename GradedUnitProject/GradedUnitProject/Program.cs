@@ -8,6 +8,7 @@ namespace GradedUnitProject
 {
     static class Program
     {
+        public static bool debug = true;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +17,7 @@ namespace GradedUnitProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new LoginPanel());
         }
     }
 }
