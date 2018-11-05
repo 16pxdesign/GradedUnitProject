@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.topBar = new System.Windows.Forms.Panel();
             this.minButton = new System.Windows.Forms.PictureBox();
@@ -35,6 +36,7 @@
             this.trayButton = new System.Windows.Forms.PictureBox();
             this.exitButton = new System.Windows.Forms.PictureBox();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.logoText = new System.Windows.Forms.Label();
             this.openMenuBox = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -42,7 +44,7 @@
             this.buttonUser = new System.Windows.Forms.Button();
             this.closeMenuBox = new System.Windows.Forms.PictureBox();
             this.panelContext = new System.Windows.Forms.Panel();
-            this.logoText = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.topBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.minButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maxButton)).BeginInit();
@@ -51,6 +53,7 @@
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.openMenuBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeMenuBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // topBar
@@ -132,6 +135,17 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(216, 420);
             this.panelMenu.TabIndex = 2;
+            // 
+            // logoText
+            // 
+            this.logoText.AutoSize = true;
+            this.logoText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoText.ForeColor = System.Drawing.Color.White;
+            this.logoText.Location = new System.Drawing.Point(12, 20);
+            this.logoText.Name = "logoText";
+            this.logoText.Size = new System.Drawing.Size(125, 18);
+            this.logoText.TabIndex = 0;
+            this.logoText.Text = "Simply Rugby";
             // 
             // openMenuBox
             // 
@@ -239,16 +253,9 @@
             this.panelContext.Size = new System.Drawing.Size(584, 420);
             this.panelContext.TabIndex = 3;
             // 
-            // logoText
+            // errorProvider1
             // 
-            this.logoText.AutoSize = true;
-            this.logoText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoText.ForeColor = System.Drawing.Color.White;
-            this.logoText.Location = new System.Drawing.Point(12, 20);
-            this.logoText.Name = "logoText";
-            this.logoText.Size = new System.Drawing.Size(125, 18);
-            this.logoText.TabIndex = 0;
-            this.logoText.Text = "Simply Rugby";
+            this.errorProvider1.ContainerControl = this;
             // 
             // Dashboard
             // 
@@ -272,6 +279,7 @@
             this.panelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.openMenuBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeMenuBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -292,5 +300,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox openMenuBox;
         private System.Windows.Forms.Label logoText;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

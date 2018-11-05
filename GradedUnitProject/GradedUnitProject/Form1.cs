@@ -10,17 +10,19 @@ using System.Windows.Forms;
 
 namespace GradedUnitProject
 {
-    public partial class DashboardWelcomeScreen : Form
+    public partial class Form1 : Form
     {
-        public DashboardWelcomeScreen()
+        Form parentContext = null;
+        public Form1(Form parentContext)
         {
             InitializeComponent();
+            this.parentContext = parentContext;
         }
 
-        public DashboardWelcomeScreen(string i)
+        protected override void OnClosed(EventArgs e)
         {
-            InitializeComponent();
-            label1.Text = i;
+            base.OnClosed(e);
+            parentContext.Show();
         }
     }
 }

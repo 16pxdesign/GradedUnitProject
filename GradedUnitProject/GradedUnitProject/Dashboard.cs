@@ -22,19 +22,36 @@ namespace GradedUnitProject
         {
             InitializeComponent();
             attachFormToPanel(new DashboardWelcomeScreen());
+            
         }
 
+        public void test(Form x)
+        {
+
+
+            Form z = this.panelContext.Controls.OfType<Form>().First();
+            z.Hide();
+            this.panelContext.Controls.Add(x);
+
+
+        }
         private void attachFormToPanel(object form)
         {
             if (this.panelContext.Controls.Count > 0)
                 this.panelContext.Controls.RemoveAt(0);
 
+
+            
             Form toAttachForm = form as Form;
             toAttachForm.TopLevel = false;
             toAttachForm.Dock = DockStyle.Fill;
             this.panelContext.Controls.Add(toAttachForm);
-            this.panelContext.Tag = form;
             toAttachForm.Show();
+
+
+
+
+
         }
 
         private void exitButton_Click(object sender, EventArgs e)
@@ -107,6 +124,15 @@ namespace GradedUnitProject
         {
             attachFormToPanel(new DashboardWelcomeScreen());
 
+        }
+
+        public void OpenChildForm(Form toAttachForm)
+        {
+            
+            toAttachForm.TopLevel = false;
+            toAttachForm.Dock = DockStyle.Fill;
+            this.panelContext.Controls.Add(toAttachForm);
+            toAttachForm.Show();
         }
     }
 }
