@@ -90,7 +90,7 @@
             this.mainPanel.Controls.Add(this.textBoxPassword);
             this.mainPanel.Controls.Add(this.buttonLLogin);
             this.mainPanel.Controls.Add(this.labelWelcomeText);
-            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.Dock = (System.Windows.Forms.DockStyle.Fill);
             this.mainPanel.ForeColor = System.Drawing.Color.White;
             this.mainPanel.Location = new System.Drawing.Point(0, 30);
             this.mainPanel.Name = "mainPanel";

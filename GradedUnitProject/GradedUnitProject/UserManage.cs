@@ -17,7 +17,7 @@ namespace GradedUnitProject
         {
             this.parentContext = parent;
             InitializeComponent();
-            
+
         }
 
 
@@ -25,30 +25,23 @@ namespace GradedUnitProject
         {
             
             DataTable table = null;
-            MysqlContext mysql = new MysqlContext();
             
-            await Task.Run(() => { table = mysql.getTable(); });
+            
+            await Task.Run(() => {
+              try
+                {
+                    MysqlContext mysql = new MysqlContext();
+                    table = mysql.getTable();
+                }
+                catch (Exception e)
+                {
+                MessageBox.Show(e.Message.ToString());
+                }
+            });
             return table;
         }
 
-        private async Task BindDataToGridAsync()
-        {
-
-            try
-            {
-                var data = await GetDataAsync();
-
-                
-                this.customDataGrid51.DataSource = data;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("error");
-            }
-
-            
-
-        }
+      
 
 
         private void closeBox_Click(object sender, EventArgs e)
@@ -56,8 +49,8 @@ namespace GradedUnitProject
             this.Close();
             if (parentContext is FormComunicatorInterface)
             {
-                FormComunicatorInterface context = (FormComunicatorInterface)parentContext;
-                context.OnFormClose();
+                FormComunicatorInterface formComunicator = (FormComunicatorInterface)parentContext;
+                formComunicator.OnFormClose();
             }
             else
             {
@@ -65,13 +58,13 @@ namespace GradedUnitProject
             }
         }
 
-        private void buttonUser_Click(object sender, EventArgs e)
+        private void openWindow_Click(object sender, EventArgs e)
         {
             if (parentContext is FormComunicatorInterface)
             {
-                FormComunicatorInterface context = (FormComunicatorInterface)parentContext;
+                FormComunicatorInterface formComunicator = (FormComunicatorInterface)parentContext;
                 var openingForm = (Form)new Form1(this);
-                context.OpenChildForm(openingForm);
+                formComunicator.OpenChildForm(openingForm);
                 this.Hide();
             }
             else
@@ -81,9 +74,29 @@ namespace GradedUnitProject
 
         }
 
-        private void UserManage_Load(object sender, EventArgs e)
+
+        private async void BindDataToGridAsync()
         {
-            //
+
+            var data = await GetDataAsync();
+
+            this.customDataGrid51.DataSource = data;
+
+            if (data != null)
+            {
+                foreach (Control item in this.Controls.OfType<Control>())
+                {
+                    if (item.Name == "circularProgressBar1")
+                        this.Controls.Remove(item);
+                }
+            }
+            else
+            {
+                circularProgressBar1.Text = "Error";
+            }
+           
+
+
         }
 
         protected override void OnShown(EventArgs e)
@@ -91,5 +104,6 @@ namespace GradedUnitProject
             base.OnShown(e);
             BindDataToGridAsync();
         }
+
     }
 }

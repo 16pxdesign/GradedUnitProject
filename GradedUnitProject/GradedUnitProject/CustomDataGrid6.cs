@@ -7,12 +7,16 @@ using System.Windows.Forms;
 
 namespace GradedUnitProject
 {
-        class CustomDataGrid6 : DataGridView
-        {
+    class CustomDataGrid6 : DataGridView
+    {
+        private DockStyle dock = DockStyle.Fill;
 
-        private DataGridViewColumnHeadersHeightSizeMode m_ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+       /* private DataGridViewColumnHeadersHeightSizeMode m_ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+
 
         private int m_columnHeadersHeight = 23;
+
+
 
 
 
@@ -26,7 +30,7 @@ namespace GradedUnitProject
             }
         }
 
-        public int ColumnHeadersHeight
+        public new int ColumnHeadersHeight
         {
             get => this.m_columnHeadersHeight;
             set
@@ -36,9 +40,20 @@ namespace GradedUnitProject
             }
 
 
+        }*/
+
+        public new DockStyle Dock
+        {
+            get => this.dock;
+            set {
+                this.dock = value;
+                base.Dock = this.dock; }
         }
 
 
-
     }
+
 }
+
+    
+

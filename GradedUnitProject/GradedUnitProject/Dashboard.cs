@@ -48,10 +48,7 @@ namespace GradedUnitProject
             this.panelContext.Controls.Add(toAttachForm);
             toAttachForm.Show();
 
-
-
-
-
+                                 
         }
 
         private void exitButton_Click(object sender, EventArgs e)

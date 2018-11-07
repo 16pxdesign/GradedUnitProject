@@ -13,6 +13,11 @@ namespace GradedUnitProject
     public partial class Form1 : Form
     {
         Form parentContext = null;
+
+        public Form1()
+        {
+        }
+
         public Form1(Form parentContext)
         {
             InitializeComponent();
@@ -23,6 +28,11 @@ namespace GradedUnitProject
         {
             base.OnClosed(e);
             parentContext.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

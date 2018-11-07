@@ -87,8 +87,11 @@ namespace GradedUnitProject
 
         private void LoginPanel_Load(object sender, EventArgs e)
         {
-            if(Program.debug)
+
+#if DEBUG
             buttonLLogin.PerformClick();
+#endif
+
         }
 
         private void topBar_MouseDown(object sender, MouseEventArgs e)
