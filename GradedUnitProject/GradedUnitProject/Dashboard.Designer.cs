@@ -66,7 +66,7 @@
             this.topBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.topBar.Location = new System.Drawing.Point(0, 0);
             this.topBar.Name = "topBar";
-            this.topBar.Size = new System.Drawing.Size(800, 30);
+            this.topBar.Size = new System.Drawing.Size(1000, 30);
             this.topBar.TabIndex = 1;
             this.topBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.topBar_MouseDown);
             // 
@@ -75,7 +75,7 @@
             this.minButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.minButton.Image = ((System.Drawing.Image)(resources.GetObject("minButton.Image")));
-            this.minButton.Location = new System.Drawing.Point(748, 7);
+            this.minButton.Location = new System.Drawing.Point(948, 7);
             this.minButton.Name = "minButton";
             this.minButton.Size = new System.Drawing.Size(20, 20);
             this.minButton.TabIndex = 2;
@@ -85,8 +85,10 @@
             // 
             // maxButton
             // 
+            this.maxButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.maxButton.Image = ((System.Drawing.Image)(resources.GetObject("maxButton.Image")));
-            this.maxButton.Location = new System.Drawing.Point(748, 7);
+            this.maxButton.Location = new System.Drawing.Point(948, 7);
             this.maxButton.Name = "maxButton";
             this.maxButton.Size = new System.Drawing.Size(20, 20);
             this.maxButton.TabIndex = 2;
@@ -99,7 +101,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.trayButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.trayButton.Image = ((System.Drawing.Image)(resources.GetObject("trayButton.Image")));
-            this.trayButton.Location = new System.Drawing.Point(722, 7);
+            this.trayButton.Location = new System.Drawing.Point(922, 7);
             this.trayButton.Name = "trayButton";
             this.trayButton.Padding = new System.Windows.Forms.Padding(0, 18, 0, 0);
             this.trayButton.Size = new System.Drawing.Size(20, 20);
@@ -113,7 +115,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.exitButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exitButton.Image = ((System.Drawing.Image)(resources.GetObject("exitButton.Image")));
-            this.exitButton.Location = new System.Drawing.Point(774, 6);
+            this.exitButton.Location = new System.Drawing.Point(974, 6);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(20, 20);
             this.exitButton.TabIndex = 0;
@@ -133,7 +135,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 30);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(216, 420);
+            this.panelMenu.Size = new System.Drawing.Size(216, 470);
             this.panelMenu.TabIndex = 2;
             // 
             // logoText
@@ -250,7 +252,7 @@
             this.panelContext.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContext.Location = new System.Drawing.Point(216, 30);
             this.panelContext.Name = "panelContext";
-            this.panelContext.Size = new System.Drawing.Size(584, 420);
+            this.panelContext.Size = new System.Drawing.Size(784, 470);
             this.panelContext.TabIndex = 3;
             // 
             // errorProvider1
@@ -261,7 +263,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1000, 600);
             this.Controls.Add(this.panelContext);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.topBar);

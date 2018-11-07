@@ -119,7 +119,9 @@ namespace GradedUnitProject
 
         public void OnFormClose()
         {
-            attachFormToPanel(new DashboardWelcomeScreen());
+            var welcomeScreen = new DashboardWelcomeScreen();
+            welcomeScreen.Dock = DockStyle.Fill;
+            attachFormToPanel(welcomeScreen);
 
         }
 

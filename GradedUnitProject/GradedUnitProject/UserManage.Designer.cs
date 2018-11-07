@@ -71,11 +71,10 @@
             // 
             // customDataGrid51
             // 
-            this.customDataGrid51.ColumnHeadersHeight = 23;
             this.customDataGrid51.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.customDataGrid51.Location = new System.Drawing.Point(23, 164);
+            this.customDataGrid51.Location = new System.Drawing.Point(26, 114);
             this.customDataGrid51.Name = "customDataGrid51";
-            this.customDataGrid51.Size = new System.Drawing.Size(498, 195);
+            this.customDataGrid51.Size = new System.Drawing.Size(498, 258);
             this.customDataGrid51.TabIndex = 3;
             // 
             // circularProgressBar1
@@ -88,7 +87,7 @@
             this.circularProgressBar1.InnerColor = System.Drawing.SystemColors.AppWorkspace;
             this.circularProgressBar1.InnerMargin = 0;
             this.circularProgressBar1.InnerWidth = 0;
-            this.circularProgressBar1.Location = new System.Drawing.Point(213, 194);
+            this.circularProgressBar1.Location = new System.Drawing.Point(215, 185);
             this.circularProgressBar1.MarqueeAnimationSpeed = 1000;
             this.circularProgressBar1.Name = "circularProgressBar1";
             this.circularProgressBar1.OuterColor = System.Drawing.SystemColors.MenuHighlight;
