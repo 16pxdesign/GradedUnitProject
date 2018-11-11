@@ -72,7 +72,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomDataGrid6.cs">
+    <Compile Include="Custom Controls\CustomDataGrid6.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\CustomTabControl.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Dashboard.cs">
@@ -103,6 +106,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tab.Designer.cs">
+      <DependentUpon>tab.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserManage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +139,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="tab.resx">
+      <DependentUpon>tab.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserManage.resx">
       <DependentUpon>UserManage.cs</DependentUpon>
     </EmbeddedResource>
