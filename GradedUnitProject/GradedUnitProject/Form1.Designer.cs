@@ -37,7 +37,7 @@ namespace GradedUnitProject
             this.customTabControl1 = new GradedUnitProject.CustomTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxPlayerPosition = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,16 +46,16 @@ namespace GradedUnitProject
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBoxMemberName = new System.Windows.Forms.TextBox();
+            this.textBoxMemberSRU = new System.Windows.Forms.TextBox();
+            this.textBoxMemberEmail = new System.Windows.Forms.TextBox();
+            this.textBoxMemberPhone = new System.Windows.Forms.TextBox();
+            this.textBoxMemberMob = new System.Windows.Forms.TextBox();
+            this.comboBoxMemberType = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBoxDoctorPhone = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -63,11 +63,10 @@ namespace GradedUnitProject
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.textBoxDoctorName = new System.Windows.Forms.TextBox();
+            this.textBoxDoctorFlat = new System.Windows.Forms.TextBox();
+            this.textBoxDoctorTown = new System.Windows.Forms.TextBox();
+            this.textBoxDoctorPostcode = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label26 = new System.Windows.Forms.Label();
@@ -75,13 +74,12 @@ namespace GradedUnitProject
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.textBoxMemberFlat = new System.Windows.Forms.TextBox();
+            this.textBoxMemberTown = new System.Windows.Forms.TextBox();
+            this.textBoxMemberPostcode = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBoxKinPhone = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -89,49 +87,51 @@ namespace GradedUnitProject
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.textBoxKinName = new System.Windows.Forms.TextBox();
+            this.textBoxKinFlat = new System.Windows.Forms.TextBox();
+            this.textBoxKinTown = new System.Windows.Forms.TextBox();
+            this.textBoxKinPostcode = new System.Windows.Forms.TextBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.customTabControl2 = new GradedUnitProject.CustomTabControl();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBoxDoctorStreet = new System.Windows.Forms.TextBox();
+            this.textBoxMemberStreet = new System.Windows.Forms.TextBox();
+            this.textBoxKinStreet = new System.Windows.Forms.TextBox();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.textBoxGuardianPhone = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
-            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.textBoxGuardianName = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
-            this.textBox29 = new System.Windows.Forms.TextBox();
+            this.textBoxGuardianPostcode = new System.Windows.Forms.TextBox();
+            this.textBoxGuardianTown = new System.Windows.Forms.TextBox();
+            this.textBoxGuardianFlat = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
-            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.textBoxGuardianRelation = new System.Windows.Forms.TextBox();
+            this.textBoxGuardianStreet = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBoxGuardian1Phone = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.textBoxGuardian1Name = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.textBoxGuardian1Postcode = new System.Windows.Forms.TextBox();
+            this.textBoxGuardian1Twon = new System.Windows.Forms.TextBox();
+            this.textBoxGuardian1Flat = new System.Windows.Forms.TextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.textBoxGuardian1Relation = new System.Windows.Forms.TextBox();
+            this.textBoxGuardian1Street = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.closeBox)).BeginInit();
             this.panel1.SuspendLayout();
             this.customTabControl1.SuspendLayout();
@@ -145,11 +145,11 @@ namespace GradedUnitProject
             this.tableLayoutPanel2.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.customTabControl2.SuspendLayout();
-            this.tabPage7.SuspendLayout();
-            this.tableLayoutPanel6.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.tabPage7.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // closeBox
@@ -221,7 +221,7 @@ namespace GradedUnitProject
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel3.Controls.Add(this.comboBox2, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.comboBoxPlayerPosition, 1, 2);
             this.tableLayoutPanel3.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label4, 0, 2);
@@ -230,12 +230,12 @@ namespace GradedUnitProject
             this.tableLayoutPanel3.Controls.Add(this.label7, 0, 5);
             this.tableLayoutPanel3.Controls.Add(this.label8, 0, 6);
             this.tableLayoutPanel3.Controls.Add(this.label9, 0, 7);
-            this.tableLayoutPanel3.Controls.Add(this.textBox1, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.textBox2, 1, 3);
-            this.tableLayoutPanel3.Controls.Add(this.textBox3, 1, 5);
-            this.tableLayoutPanel3.Controls.Add(this.textBox4, 1, 6);
-            this.tableLayoutPanel3.Controls.Add(this.textBox5, 1, 7);
-            this.tableLayoutPanel3.Controls.Add(this.comboBox1, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.textBoxMemberName, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.textBoxMemberSRU, 1, 3);
+            this.tableLayoutPanel3.Controls.Add(this.textBoxMemberEmail, 1, 5);
+            this.tableLayoutPanel3.Controls.Add(this.textBoxMemberPhone, 1, 6);
+            this.tableLayoutPanel3.Controls.Add(this.textBoxMemberMob, 1, 7);
+            this.tableLayoutPanel3.Controls.Add(this.comboBoxMemberType, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.dateTimePicker1, 1, 4);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -251,15 +251,15 @@ namespace GradedUnitProject
             this.tableLayoutPanel3.Size = new System.Drawing.Size(500, 200);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
-            // comboBox2
+            // comboBoxPlayerPosition
             // 
-            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(103, 53);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(344, 26);
-            this.comboBox2.TabIndex = 14;
+            this.comboBoxPlayerPosition.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxPlayerPosition.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxPlayerPosition.FormattingEnabled = true;
+            this.comboBoxPlayerPosition.Location = new System.Drawing.Point(103, 53);
+            this.comboBoxPlayerPosition.Name = "comboBoxPlayerPosition";
+            this.comboBoxPlayerPosition.Size = new System.Drawing.Size(344, 26);
+            this.comboBoxPlayerPosition.TabIndex = 14;
             // 
             // label3
             // 
@@ -365,60 +365,60 @@ namespace GradedUnitProject
             this.label9.TabIndex = 7;
             this.label9.Text = "Mobile";
             // 
-            // textBox1
+            // textBoxMemberName
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(103, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(344, 27);
-            this.textBox1.TabIndex = 8;
+            this.textBoxMemberName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxMemberName.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMemberName.Location = new System.Drawing.Point(103, 3);
+            this.textBoxMemberName.Name = "textBoxMemberName";
+            this.textBoxMemberName.Size = new System.Drawing.Size(344, 27);
+            this.textBoxMemberName.TabIndex = 8;
             // 
-            // textBox2
+            // textBoxMemberSRU
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(103, 78);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(344, 27);
-            this.textBox2.TabIndex = 9;
+            this.textBoxMemberSRU.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxMemberSRU.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMemberSRU.Location = new System.Drawing.Point(103, 78);
+            this.textBoxMemberSRU.Name = "textBoxMemberSRU";
+            this.textBoxMemberSRU.Size = new System.Drawing.Size(344, 27);
+            this.textBoxMemberSRU.TabIndex = 9;
             // 
-            // textBox3
+            // textBoxMemberEmail
             // 
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(103, 128);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(344, 27);
-            this.textBox3.TabIndex = 10;
+            this.textBoxMemberEmail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxMemberEmail.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMemberEmail.Location = new System.Drawing.Point(103, 128);
+            this.textBoxMemberEmail.Name = "textBoxMemberEmail";
+            this.textBoxMemberEmail.Size = new System.Drawing.Size(344, 27);
+            this.textBoxMemberEmail.TabIndex = 10;
             // 
-            // textBox4
+            // textBoxMemberPhone
             // 
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(103, 153);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(344, 27);
-            this.textBox4.TabIndex = 11;
+            this.textBoxMemberPhone.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxMemberPhone.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMemberPhone.Location = new System.Drawing.Point(103, 153);
+            this.textBoxMemberPhone.Name = "textBoxMemberPhone";
+            this.textBoxMemberPhone.Size = new System.Drawing.Size(344, 27);
+            this.textBoxMemberPhone.TabIndex = 11;
             // 
-            // textBox5
+            // textBoxMemberMob
             // 
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox5.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(103, 178);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(344, 27);
-            this.textBox5.TabIndex = 12;
+            this.textBoxMemberMob.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxMemberMob.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMemberMob.Location = new System.Drawing.Point(103, 178);
+            this.textBoxMemberMob.Name = "textBoxMemberMob";
+            this.textBoxMemberMob.Size = new System.Drawing.Size(344, 27);
+            this.textBoxMemberMob.TabIndex = 12;
             // 
-            // comboBox1
+            // comboBoxMemberType
             // 
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(103, 28);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(344, 26);
-            this.comboBox1.TabIndex = 13;
+            this.comboBoxMemberType.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxMemberType.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxMemberType.FormattingEnabled = true;
+            this.comboBoxMemberType.Location = new System.Drawing.Point(103, 28);
+            this.comboBoxMemberType.Name = "comboBoxMemberType";
+            this.comboBoxMemberType.Size = new System.Drawing.Size(344, 26);
+            this.comboBoxMemberType.TabIndex = 13;
             // 
             // dateTimePicker1
             // 
@@ -446,7 +446,7 @@ namespace GradedUnitProject
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel4.Controls.Add(this.textBox11, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.textBoxDoctorPhone, 1, 1);
             this.tableLayoutPanel4.Controls.Add(this.label17, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.label18, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.label19, 0, 2);
@@ -454,11 +454,11 @@ namespace GradedUnitProject
             this.tableLayoutPanel4.Controls.Add(this.label21, 0, 4);
             this.tableLayoutPanel4.Controls.Add(this.label22, 0, 5);
             this.tableLayoutPanel4.Controls.Add(this.label23, 0, 6);
-            this.tableLayoutPanel4.Controls.Add(this.textBox12, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.textBox13, 1, 3);
-            this.tableLayoutPanel4.Controls.Add(this.textBox14, 1, 5);
-            this.tableLayoutPanel4.Controls.Add(this.textBox15, 1, 6);
-            this.tableLayoutPanel4.Controls.Add(this.dateTimePicker3, 1, 4);
+            this.tableLayoutPanel4.Controls.Add(this.textBoxDoctorName, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.textBoxDoctorFlat, 1, 3);
+            this.tableLayoutPanel4.Controls.Add(this.textBoxDoctorTown, 1, 5);
+            this.tableLayoutPanel4.Controls.Add(this.textBoxDoctorPostcode, 1, 6);
+            this.tableLayoutPanel4.Controls.Add(this.textBoxDoctorStreet, 1, 4);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(276, 97);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 7;
@@ -472,14 +472,14 @@ namespace GradedUnitProject
             this.tableLayoutPanel4.Size = new System.Drawing.Size(500, 200);
             this.tableLayoutPanel4.TabIndex = 4;
             // 
-            // textBox11
+            // textBoxDoctorPhone
             // 
-            this.textBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox11.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(103, 31);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(344, 27);
-            this.textBox11.TabIndex = 9;
+            this.textBoxDoctorPhone.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxDoctorPhone.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxDoctorPhone.Location = new System.Drawing.Point(103, 31);
+            this.textBoxDoctorPhone.Name = "textBoxDoctorPhone";
+            this.textBoxDoctorPhone.Size = new System.Drawing.Size(344, 27);
+            this.textBoxDoctorPhone.TabIndex = 9;
             // 
             // label17
             // 
@@ -573,50 +573,41 @@ namespace GradedUnitProject
             this.label23.TabIndex = 6;
             this.label23.Text = "Postcode";
             // 
-            // textBox12
+            // textBoxDoctorName
             // 
-            this.textBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox12.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(103, 3);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(344, 27);
-            this.textBox12.TabIndex = 8;
+            this.textBoxDoctorName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxDoctorName.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxDoctorName.Location = new System.Drawing.Point(103, 3);
+            this.textBoxDoctorName.Name = "textBoxDoctorName";
+            this.textBoxDoctorName.Size = new System.Drawing.Size(344, 27);
+            this.textBoxDoctorName.TabIndex = 8;
             // 
-            // textBox13
+            // textBoxDoctorFlat
             // 
-            this.textBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox13.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(103, 87);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(344, 27);
-            this.textBox13.TabIndex = 9;
+            this.textBoxDoctorFlat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxDoctorFlat.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxDoctorFlat.Location = new System.Drawing.Point(103, 87);
+            this.textBoxDoctorFlat.Name = "textBoxDoctorFlat";
+            this.textBoxDoctorFlat.Size = new System.Drawing.Size(344, 27);
+            this.textBoxDoctorFlat.TabIndex = 9;
             // 
-            // textBox14
+            // textBoxDoctorTown
             // 
-            this.textBox14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox14.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(103, 143);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(344, 27);
-            this.textBox14.TabIndex = 10;
+            this.textBoxDoctorTown.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxDoctorTown.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxDoctorTown.Location = new System.Drawing.Point(103, 143);
+            this.textBoxDoctorTown.Name = "textBoxDoctorTown";
+            this.textBoxDoctorTown.Size = new System.Drawing.Size(344, 27);
+            this.textBoxDoctorTown.TabIndex = 10;
             // 
-            // textBox15
+            // textBoxDoctorPostcode
             // 
-            this.textBox15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox15.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.Location = new System.Drawing.Point(103, 171);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(344, 27);
-            this.textBox15.TabIndex = 11;
-            // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker3.Location = new System.Drawing.Point(103, 115);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(344, 27);
-            this.dateTimePicker3.TabIndex = 15;
+            this.textBoxDoctorPostcode.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxDoctorPostcode.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxDoctorPostcode.Location = new System.Drawing.Point(103, 171);
+            this.textBoxDoctorPostcode.Name = "textBoxDoctorPostcode";
+            this.textBoxDoctorPostcode.Size = new System.Drawing.Size(344, 27);
+            this.textBoxDoctorPostcode.TabIndex = 11;
             // 
             // tabPage3
             // 
@@ -640,10 +631,10 @@ namespace GradedUnitProject
             this.tableLayoutPanel5.Controls.Add(this.label28, 0, 2);
             this.tableLayoutPanel5.Controls.Add(this.label29, 0, 3);
             this.tableLayoutPanel5.Controls.Add(this.label30, 0, 4);
-            this.tableLayoutPanel5.Controls.Add(this.textBox18, 1, 1);
-            this.tableLayoutPanel5.Controls.Add(this.textBox19, 1, 3);
-            this.tableLayoutPanel5.Controls.Add(this.textBox20, 1, 4);
-            this.tableLayoutPanel5.Controls.Add(this.dateTimePicker4, 1, 2);
+            this.tableLayoutPanel5.Controls.Add(this.textBoxMemberFlat, 1, 1);
+            this.tableLayoutPanel5.Controls.Add(this.textBoxMemberTown, 1, 3);
+            this.tableLayoutPanel5.Controls.Add(this.textBoxMemberPostcode, 1, 4);
+            this.tableLayoutPanel5.Controls.Add(this.textBoxMemberStreet, 1, 2);
             this.tableLayoutPanel5.Location = new System.Drawing.Point(276, 97);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 5;
@@ -722,41 +713,32 @@ namespace GradedUnitProject
             this.label30.TabIndex = 6;
             this.label30.Text = "Postcode";
             // 
-            // textBox18
+            // textBoxMemberFlat
             // 
-            this.textBox18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox18.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.Location = new System.Drawing.Point(103, 43);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(344, 27);
-            this.textBox18.TabIndex = 9;
+            this.textBoxMemberFlat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxMemberFlat.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMemberFlat.Location = new System.Drawing.Point(103, 43);
+            this.textBoxMemberFlat.Name = "textBoxMemberFlat";
+            this.textBoxMemberFlat.Size = new System.Drawing.Size(344, 27);
+            this.textBoxMemberFlat.TabIndex = 9;
             // 
-            // textBox19
+            // textBoxMemberTown
             // 
-            this.textBox19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox19.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox19.Location = new System.Drawing.Point(103, 123);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(344, 27);
-            this.textBox19.TabIndex = 10;
+            this.textBoxMemberTown.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxMemberTown.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMemberTown.Location = new System.Drawing.Point(103, 123);
+            this.textBoxMemberTown.Name = "textBoxMemberTown";
+            this.textBoxMemberTown.Size = new System.Drawing.Size(344, 27);
+            this.textBoxMemberTown.TabIndex = 10;
             // 
-            // textBox20
+            // textBoxMemberPostcode
             // 
-            this.textBox20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox20.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox20.Location = new System.Drawing.Point(103, 163);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(344, 27);
-            this.textBox20.TabIndex = 11;
-            // 
-            // dateTimePicker4
-            // 
-            this.dateTimePicker4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker4.Location = new System.Drawing.Point(103, 83);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(344, 27);
-            this.dateTimePicker4.TabIndex = 15;
+            this.textBoxMemberPostcode.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxMemberPostcode.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMemberPostcode.Location = new System.Drawing.Point(103, 163);
+            this.textBoxMemberPostcode.Name = "textBoxMemberPostcode";
+            this.textBoxMemberPostcode.Size = new System.Drawing.Size(344, 27);
+            this.textBoxMemberPostcode.TabIndex = 11;
             // 
             // tabPage4
             // 
@@ -775,7 +757,7 @@ namespace GradedUnitProject
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel2.Controls.Add(this.textBox10, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.textBoxKinPhone, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.label10, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label11, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label12, 0, 2);
@@ -783,11 +765,11 @@ namespace GradedUnitProject
             this.tableLayoutPanel2.Controls.Add(this.label14, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.label15, 0, 5);
             this.tableLayoutPanel2.Controls.Add(this.label16, 0, 6);
-            this.tableLayoutPanel2.Controls.Add(this.textBox6, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.textBox7, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.textBox8, 1, 5);
-            this.tableLayoutPanel2.Controls.Add(this.textBox9, 1, 6);
-            this.tableLayoutPanel2.Controls.Add(this.dateTimePicker2, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.textBoxKinName, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.textBoxKinFlat, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.textBoxKinTown, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.textBoxKinPostcode, 1, 6);
+            this.tableLayoutPanel2.Controls.Add(this.textBoxKinStreet, 1, 4);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(276, 97);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 7;
@@ -801,14 +783,14 @@ namespace GradedUnitProject
             this.tableLayoutPanel2.Size = new System.Drawing.Size(500, 200);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
-            // textBox10
+            // textBoxKinPhone
             // 
-            this.textBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox10.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(103, 31);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(344, 27);
-            this.textBox10.TabIndex = 9;
+            this.textBoxKinPhone.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxKinPhone.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxKinPhone.Location = new System.Drawing.Point(103, 31);
+            this.textBoxKinPhone.Name = "textBoxKinPhone";
+            this.textBoxKinPhone.Size = new System.Drawing.Size(344, 27);
+            this.textBoxKinPhone.TabIndex = 9;
             // 
             // label10
             // 
@@ -901,50 +883,41 @@ namespace GradedUnitProject
             this.label16.TabIndex = 6;
             this.label16.Text = "Postcode";
             // 
-            // textBox6
+            // textBoxKinName
             // 
-            this.textBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox6.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(103, 3);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(344, 27);
-            this.textBox6.TabIndex = 8;
+            this.textBoxKinName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxKinName.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxKinName.Location = new System.Drawing.Point(103, 3);
+            this.textBoxKinName.Name = "textBoxKinName";
+            this.textBoxKinName.Size = new System.Drawing.Size(344, 27);
+            this.textBoxKinName.TabIndex = 8;
             // 
-            // textBox7
+            // textBoxKinFlat
             // 
-            this.textBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox7.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(103, 87);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(344, 27);
-            this.textBox7.TabIndex = 9;
+            this.textBoxKinFlat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxKinFlat.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxKinFlat.Location = new System.Drawing.Point(103, 87);
+            this.textBoxKinFlat.Name = "textBoxKinFlat";
+            this.textBoxKinFlat.Size = new System.Drawing.Size(344, 27);
+            this.textBoxKinFlat.TabIndex = 9;
             // 
-            // textBox8
+            // textBoxKinTown
             // 
-            this.textBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox8.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(103, 143);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(344, 27);
-            this.textBox8.TabIndex = 10;
+            this.textBoxKinTown.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxKinTown.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxKinTown.Location = new System.Drawing.Point(103, 143);
+            this.textBoxKinTown.Name = "textBoxKinTown";
+            this.textBoxKinTown.Size = new System.Drawing.Size(344, 27);
+            this.textBoxKinTown.TabIndex = 10;
             // 
-            // textBox9
+            // textBoxKinPostcode
             // 
-            this.textBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox9.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(103, 171);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(344, 27);
-            this.textBox9.TabIndex = 11;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(103, 115);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(344, 27);
-            this.dateTimePicker2.TabIndex = 15;
+            this.textBoxKinPostcode.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxKinPostcode.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxKinPostcode.Location = new System.Drawing.Point(103, 171);
+            this.textBoxKinPostcode.Name = "textBoxKinPostcode";
+            this.textBoxKinPostcode.Size = new System.Drawing.Size(344, 27);
+            this.textBoxKinPostcode.TabIndex = 11;
             // 
             // tabPage5
             // 
@@ -973,218 +946,10 @@ namespace GradedUnitProject
             this.customTabControl2.TabIndex = 0;
             this.customTabControl2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             // 
-            // tabPage7
-            // 
-            this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.tabPage7.Controls.Add(this.tableLayoutPanel6);
-            this.tabPage7.Location = new System.Drawing.Point(4, 54);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(601, 245);
-            this.tabPage7.TabIndex = 0;
-            this.tabPage7.Text = "Primary";
-            // 
-            // tableLayoutPanel6
-            // 
-            this.tableLayoutPanel6.ColumnCount = 3;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel6.Controls.Add(this.textBox16, 1, 1);
-            this.tableLayoutPanel6.Controls.Add(this.label24, 0, 1);
-            this.tableLayoutPanel6.Controls.Add(this.label25, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.textBox17, 1, 0);
-            this.tableLayoutPanel6.Controls.Add(this.label35, 0, 7);
-            this.tableLayoutPanel6.Controls.Add(this.label34, 0, 6);
-            this.tableLayoutPanel6.Controls.Add(this.label33, 0, 5);
-            this.tableLayoutPanel6.Controls.Add(this.label32, 0, 4);
-            this.tableLayoutPanel6.Controls.Add(this.label31, 0, 3);
-            this.tableLayoutPanel6.Controls.Add(this.textBox23, 1, 7);
-            this.tableLayoutPanel6.Controls.Add(this.textBox22, 1, 6);
-            this.tableLayoutPanel6.Controls.Add(this.dateTimePicker5, 1, 5);
-            this.tableLayoutPanel6.Controls.Add(this.textBox21, 1, 4);
-            this.tableLayoutPanel6.Controls.Add(this.label36, 0, 2);
-            this.tableLayoutPanel6.Controls.Add(this.textBox24, 1, 2);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(50, 22);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 8;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(500, 200);
-            this.tableLayoutPanel6.TabIndex = 5;
-            // 
-            // textBox16
-            // 
-            this.textBox16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox16.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.Location = new System.Drawing.Point(103, 28);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(344, 27);
-            this.textBox16.TabIndex = 9;
-            // 
-            // label24
-            // 
-            this.label24.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(32, 28);
-            this.label24.Margin = new System.Windows.Forms.Padding(3, 0, 10, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(58, 18);
-            this.label24.TabIndex = 1;
-            this.label24.Text = "Phone";
-            // 
-            // label25
-            // 
-            this.label25.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(3, 0);
-            this.label25.Margin = new System.Windows.Forms.Padding(3, 0, 10, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(87, 25);
-            this.label25.TabIndex = 0;
-            this.label25.Text = "Guardian name";
-            // 
-            // textBox17
-            // 
-            this.textBox17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox17.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.Location = new System.Drawing.Point(103, 3);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(344, 27);
-            this.textBox17.TabIndex = 8;
-            // 
-            // label35
-            // 
-            this.label35.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.Color.White;
-            this.label35.Location = new System.Drawing.Point(8, 178);
-            this.label35.Margin = new System.Windows.Forms.Padding(3, 0, 10, 0);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(82, 18);
-            this.label35.TabIndex = 6;
-            this.label35.Text = "Postcode";
-            // 
-            // label34
-            // 
-            this.label34.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.Color.White;
-            this.label34.Location = new System.Drawing.Point(41, 153);
-            this.label34.Margin = new System.Windows.Forms.Padding(3, 0, 10, 0);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(49, 18);
-            this.label34.TabIndex = 5;
-            this.label34.Text = "Town";
-            // 
-            // label33
-            // 
-            this.label33.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.White;
-            this.label33.Location = new System.Drawing.Point(32, 128);
-            this.label33.Margin = new System.Windows.Forms.Padding(3, 0, 10, 0);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(58, 18);
-            this.label33.TabIndex = 4;
-            this.label33.Text = "Street";
-            // 
-            // label32
-            // 
-            this.label32.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.ForeColor = System.Drawing.Color.White;
-            this.label32.Location = new System.Drawing.Point(23, 103);
-            this.label32.Margin = new System.Windows.Forms.Padding(3, 0, 10, 0);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(67, 18);
-            this.label32.TabIndex = 3;
-            this.label32.Text = "Flat No";
-            // 
-            // label31
-            // 
-            this.label31.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.White;
-            this.label31.Location = new System.Drawing.Point(17, 78);
-            this.label31.Margin = new System.Windows.Forms.Padding(3, 0, 10, 0);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(73, 18);
-            this.label31.TabIndex = 2;
-            this.label31.Text = "Address";
-            // 
-            // textBox23
-            // 
-            this.textBox23.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox23.Location = new System.Drawing.Point(103, 178);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(344, 27);
-            this.textBox23.TabIndex = 11;
-            // 
-            // textBox22
-            // 
-            this.textBox22.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox22.Location = new System.Drawing.Point(103, 153);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(344, 27);
-            this.textBox22.TabIndex = 10;
-            // 
-            // dateTimePicker5
-            // 
-            this.dateTimePicker5.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker5.Location = new System.Drawing.Point(103, 128);
-            this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(344, 27);
-            this.dateTimePicker5.TabIndex = 15;
-            // 
-            // textBox21
-            // 
-            this.textBox21.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox21.Location = new System.Drawing.Point(103, 103);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(344, 27);
-            this.textBox21.TabIndex = 9;
-            // 
-            // label36
-            // 
-            this.label36.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.White;
-            this.label36.Location = new System.Drawing.Point(14, 53);
-            this.label36.Margin = new System.Windows.Forms.Padding(3, 0, 10, 0);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(76, 18);
-            this.label36.TabIndex = 16;
-            this.label36.Text = "Relation";
-            // 
-            // textBox24
-            // 
-            this.textBox24.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox24.Location = new System.Drawing.Point(103, 53);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(344, 27);
-            this.textBox24.TabIndex = 17;
-            // 
             // tabPage8
             // 
             this.tabPage8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.tabPage8.Controls.Add(this.tableLayoutPanel7);
+            this.tabPage8.Controls.Add(this.tableLayoutPanel6);
             this.tabPage8.Location = new System.Drawing.Point(4, 54);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
@@ -1220,27 +985,65 @@ namespace GradedUnitProject
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1086, 594);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
+            // textBoxDoctorStreet
+            // 
+            this.textBoxDoctorStreet.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxDoctorStreet.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxDoctorStreet.Location = new System.Drawing.Point(103, 115);
+            this.textBoxDoctorStreet.Name = "textBoxDoctorStreet";
+            this.textBoxDoctorStreet.Size = new System.Drawing.Size(344, 27);
+            this.textBoxDoctorStreet.TabIndex = 12;
+            // 
+            // textBoxMemberStreet
+            // 
+            this.textBoxMemberStreet.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxMemberStreet.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMemberStreet.Location = new System.Drawing.Point(103, 83);
+            this.textBoxMemberStreet.Name = "textBoxMemberStreet";
+            this.textBoxMemberStreet.Size = new System.Drawing.Size(344, 27);
+            this.textBoxMemberStreet.TabIndex = 12;
+            // 
+            // textBoxKinStreet
+            // 
+            this.textBoxKinStreet.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxKinStreet.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxKinStreet.Location = new System.Drawing.Point(103, 115);
+            this.textBoxKinStreet.Name = "textBoxKinStreet";
+            this.textBoxKinStreet.Size = new System.Drawing.Size(344, 27);
+            this.textBoxKinStreet.TabIndex = 12;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.tabPage7.Controls.Add(this.tableLayoutPanel7);
+            this.tabPage7.Location = new System.Drawing.Point(4, 54);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(601, 245);
+            this.tabPage7.TabIndex = 0;
+            this.tabPage7.Text = "Primary";
+            // 
             // tableLayoutPanel7
             // 
             this.tableLayoutPanel7.ColumnCount = 3;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel7.Controls.Add(this.textBox25, 1, 1);
+            this.tableLayoutPanel7.Controls.Add(this.textBoxGuardianPhone, 1, 1);
             this.tableLayoutPanel7.Controls.Add(this.label37, 0, 1);
             this.tableLayoutPanel7.Controls.Add(this.label38, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.textBox26, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.textBoxGuardianName, 1, 0);
             this.tableLayoutPanel7.Controls.Add(this.label39, 0, 7);
             this.tableLayoutPanel7.Controls.Add(this.label40, 0, 6);
             this.tableLayoutPanel7.Controls.Add(this.label41, 0, 5);
             this.tableLayoutPanel7.Controls.Add(this.label42, 0, 4);
             this.tableLayoutPanel7.Controls.Add(this.label43, 0, 3);
-            this.tableLayoutPanel7.Controls.Add(this.textBox27, 1, 7);
-            this.tableLayoutPanel7.Controls.Add(this.textBox28, 1, 6);
-            this.tableLayoutPanel7.Controls.Add(this.dateTimePicker6, 1, 5);
-            this.tableLayoutPanel7.Controls.Add(this.textBox29, 1, 4);
+            this.tableLayoutPanel7.Controls.Add(this.textBoxGuardianPostcode, 1, 7);
+            this.tableLayoutPanel7.Controls.Add(this.textBoxGuardianTown, 1, 6);
+            this.tableLayoutPanel7.Controls.Add(this.textBoxGuardianFlat, 1, 4);
             this.tableLayoutPanel7.Controls.Add(this.label44, 0, 2);
-            this.tableLayoutPanel7.Controls.Add(this.textBox30, 1, 2);
+            this.tableLayoutPanel7.Controls.Add(this.textBoxGuardianRelation, 1, 2);
+            this.tableLayoutPanel7.Controls.Add(this.textBoxGuardianStreet, 1, 5);
             this.tableLayoutPanel7.Location = new System.Drawing.Point(50, 22);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 8;
@@ -1253,16 +1056,16 @@ namespace GradedUnitProject
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(500, 200);
-            this.tableLayoutPanel7.TabIndex = 6;
+            this.tableLayoutPanel7.TabIndex = 7;
             // 
-            // textBox25
+            // textBoxGuardianPhone
             // 
-            this.textBox25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox25.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox25.Location = new System.Drawing.Point(103, 28);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(344, 27);
-            this.textBox25.TabIndex = 9;
+            this.textBoxGuardianPhone.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxGuardianPhone.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGuardianPhone.Location = new System.Drawing.Point(103, 28);
+            this.textBoxGuardianPhone.Name = "textBoxGuardianPhone";
+            this.textBoxGuardianPhone.Size = new System.Drawing.Size(344, 27);
+            this.textBoxGuardianPhone.TabIndex = 9;
             // 
             // label37
             // 
@@ -1290,14 +1093,14 @@ namespace GradedUnitProject
             this.label38.TabIndex = 0;
             this.label38.Text = "Guardian name";
             // 
-            // textBox26
+            // textBoxGuardianName
             // 
-            this.textBox26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox26.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox26.Location = new System.Drawing.Point(103, 3);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(344, 27);
-            this.textBox26.TabIndex = 8;
+            this.textBoxGuardianName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxGuardianName.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGuardianName.Location = new System.Drawing.Point(103, 3);
+            this.textBoxGuardianName.Name = "textBoxGuardianName";
+            this.textBoxGuardianName.Size = new System.Drawing.Size(344, 27);
+            this.textBoxGuardianName.TabIndex = 8;
             // 
             // label39
             // 
@@ -1364,37 +1167,32 @@ namespace GradedUnitProject
             this.label43.TabIndex = 2;
             this.label43.Text = "Address";
             // 
-            // textBox27
+            // textBoxGuardianPostcode
             // 
-            this.textBox27.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox27.Location = new System.Drawing.Point(103, 178);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(344, 27);
-            this.textBox27.TabIndex = 11;
+            this.textBoxGuardianPostcode.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxGuardianPostcode.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGuardianPostcode.Location = new System.Drawing.Point(103, 178);
+            this.textBoxGuardianPostcode.Name = "textBoxGuardianPostcode";
+            this.textBoxGuardianPostcode.Size = new System.Drawing.Size(344, 27);
+            this.textBoxGuardianPostcode.TabIndex = 11;
             // 
-            // textBox28
+            // textBoxGuardianTown
             // 
-            this.textBox28.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox28.Location = new System.Drawing.Point(103, 153);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(344, 27);
-            this.textBox28.TabIndex = 10;
+            this.textBoxGuardianTown.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxGuardianTown.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGuardianTown.Location = new System.Drawing.Point(103, 153);
+            this.textBoxGuardianTown.Name = "textBoxGuardianTown";
+            this.textBoxGuardianTown.Size = new System.Drawing.Size(344, 27);
+            this.textBoxGuardianTown.TabIndex = 10;
             // 
-            // dateTimePicker6
+            // textBoxGuardianFlat
             // 
-            this.dateTimePicker6.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker6.Location = new System.Drawing.Point(103, 128);
-            this.dateTimePicker6.Name = "dateTimePicker6";
-            this.dateTimePicker6.Size = new System.Drawing.Size(344, 27);
-            this.dateTimePicker6.TabIndex = 15;
-            // 
-            // textBox29
-            // 
-            this.textBox29.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox29.Location = new System.Drawing.Point(103, 103);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(344, 27);
-            this.textBox29.TabIndex = 9;
+            this.textBoxGuardianFlat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxGuardianFlat.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGuardianFlat.Location = new System.Drawing.Point(103, 103);
+            this.textBoxGuardianFlat.Name = "textBoxGuardianFlat";
+            this.textBoxGuardianFlat.Size = new System.Drawing.Size(344, 27);
+            this.textBoxGuardianFlat.TabIndex = 9;
             // 
             // label44
             // 
@@ -1409,13 +1207,225 @@ namespace GradedUnitProject
             this.label44.TabIndex = 16;
             this.label44.Text = "Relation";
             // 
-            // textBox30
+            // textBoxGuardianRelation
             // 
-            this.textBox30.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox30.Location = new System.Drawing.Point(103, 53);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(344, 27);
-            this.textBox30.TabIndex = 17;
+            this.textBoxGuardianRelation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxGuardianRelation.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGuardianRelation.Location = new System.Drawing.Point(103, 53);
+            this.textBoxGuardianRelation.Name = "textBoxGuardianRelation";
+            this.textBoxGuardianRelation.Size = new System.Drawing.Size(344, 27);
+            this.textBoxGuardianRelation.TabIndex = 17;
+            // 
+            // textBoxGuardianStreet
+            // 
+            this.textBoxGuardianStreet.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxGuardianStreet.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGuardianStreet.Location = new System.Drawing.Point(103, 128);
+            this.textBoxGuardianStreet.Name = "textBoxGuardianStreet";
+            this.textBoxGuardianStreet.Size = new System.Drawing.Size(344, 27);
+            this.textBoxGuardianStreet.TabIndex = 18;
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.ColumnCount = 3;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel6.Controls.Add(this.textBoxGuardian1Phone, 1, 1);
+            this.tableLayoutPanel6.Controls.Add(this.label24, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.label25, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.textBoxGuardian1Name, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.label31, 0, 7);
+            this.tableLayoutPanel6.Controls.Add(this.label32, 0, 6);
+            this.tableLayoutPanel6.Controls.Add(this.label33, 0, 5);
+            this.tableLayoutPanel6.Controls.Add(this.label34, 0, 4);
+            this.tableLayoutPanel6.Controls.Add(this.label35, 0, 3);
+            this.tableLayoutPanel6.Controls.Add(this.textBoxGuardian1Postcode, 1, 7);
+            this.tableLayoutPanel6.Controls.Add(this.textBoxGuardian1Twon, 1, 6);
+            this.tableLayoutPanel6.Controls.Add(this.textBoxGuardian1Flat, 1, 4);
+            this.tableLayoutPanel6.Controls.Add(this.label36, 0, 2);
+            this.tableLayoutPanel6.Controls.Add(this.textBoxGuardian1Relation, 1, 2);
+            this.tableLayoutPanel6.Controls.Add(this.textBoxGuardian1Street, 1, 5);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(50, 22);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 8;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(500, 200);
+            this.tableLayoutPanel6.TabIndex = 8;
+            // 
+            // textBoxGuardian1Phone
+            // 
+            this.textBoxGuardian1Phone.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxGuardian1Phone.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGuardian1Phone.Location = new System.Drawing.Point(103, 28);
+            this.textBoxGuardian1Phone.Name = "textBoxGuardian1Phone";
+            this.textBoxGuardian1Phone.Size = new System.Drawing.Size(344, 27);
+            this.textBoxGuardian1Phone.TabIndex = 9;
+            // 
+            // label24
+            // 
+            this.label24.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.White;
+            this.label24.Location = new System.Drawing.Point(32, 28);
+            this.label24.Margin = new System.Windows.Forms.Padding(3, 0, 10, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(58, 18);
+            this.label24.TabIndex = 1;
+            this.label24.Text = "Phone";
+            // 
+            // label25
+            // 
+            this.label25.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.White;
+            this.label25.Location = new System.Drawing.Point(3, 0);
+            this.label25.Margin = new System.Windows.Forms.Padding(3, 0, 10, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(87, 25);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "Guardian name";
+            // 
+            // textBoxGuardian1Name
+            // 
+            this.textBoxGuardian1Name.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxGuardian1Name.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGuardian1Name.Location = new System.Drawing.Point(103, 3);
+            this.textBoxGuardian1Name.Name = "textBoxGuardian1Name";
+            this.textBoxGuardian1Name.Size = new System.Drawing.Size(344, 27);
+            this.textBoxGuardian1Name.TabIndex = 8;
+            // 
+            // label31
+            // 
+            this.label31.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.White;
+            this.label31.Location = new System.Drawing.Point(8, 178);
+            this.label31.Margin = new System.Windows.Forms.Padding(3, 0, 10, 0);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(82, 18);
+            this.label31.TabIndex = 6;
+            this.label31.Text = "Postcode";
+            // 
+            // label32
+            // 
+            this.label32.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.Color.White;
+            this.label32.Location = new System.Drawing.Point(41, 153);
+            this.label32.Margin = new System.Windows.Forms.Padding(3, 0, 10, 0);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(49, 18);
+            this.label32.TabIndex = 5;
+            this.label32.Text = "Town";
+            // 
+            // label33
+            // 
+            this.label33.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.White;
+            this.label33.Location = new System.Drawing.Point(32, 128);
+            this.label33.Margin = new System.Windows.Forms.Padding(3, 0, 10, 0);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(58, 18);
+            this.label33.TabIndex = 4;
+            this.label33.Text = "Street";
+            // 
+            // label34
+            // 
+            this.label34.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.White;
+            this.label34.Location = new System.Drawing.Point(23, 103);
+            this.label34.Margin = new System.Windows.Forms.Padding(3, 0, 10, 0);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(67, 18);
+            this.label34.TabIndex = 3;
+            this.label34.Text = "Flat No";
+            // 
+            // label35
+            // 
+            this.label35.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.White;
+            this.label35.Location = new System.Drawing.Point(17, 78);
+            this.label35.Margin = new System.Windows.Forms.Padding(3, 0, 10, 0);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(73, 18);
+            this.label35.TabIndex = 2;
+            this.label35.Text = "Address";
+            // 
+            // textBoxGuardian1Postcode
+            // 
+            this.textBoxGuardian1Postcode.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxGuardian1Postcode.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGuardian1Postcode.Location = new System.Drawing.Point(103, 178);
+            this.textBoxGuardian1Postcode.Name = "textBoxGuardian1Postcode";
+            this.textBoxGuardian1Postcode.Size = new System.Drawing.Size(344, 27);
+            this.textBoxGuardian1Postcode.TabIndex = 11;
+            // 
+            // textBoxGuardian1Twon
+            // 
+            this.textBoxGuardian1Twon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxGuardian1Twon.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGuardian1Twon.Location = new System.Drawing.Point(103, 153);
+            this.textBoxGuardian1Twon.Name = "textBoxGuardian1Twon";
+            this.textBoxGuardian1Twon.Size = new System.Drawing.Size(344, 27);
+            this.textBoxGuardian1Twon.TabIndex = 10;
+            // 
+            // textBoxGuardian1Flat
+            // 
+            this.textBoxGuardian1Flat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxGuardian1Flat.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGuardian1Flat.Location = new System.Drawing.Point(103, 103);
+            this.textBoxGuardian1Flat.Name = "textBoxGuardian1Flat";
+            this.textBoxGuardian1Flat.Size = new System.Drawing.Size(344, 27);
+            this.textBoxGuardian1Flat.TabIndex = 9;
+            // 
+            // label36
+            // 
+            this.label36.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.White;
+            this.label36.Location = new System.Drawing.Point(14, 53);
+            this.label36.Margin = new System.Windows.Forms.Padding(3, 0, 10, 0);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(76, 18);
+            this.label36.TabIndex = 16;
+            this.label36.Text = "Relation";
+            // 
+            // textBoxGuardian1Relation
+            // 
+            this.textBoxGuardian1Relation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxGuardian1Relation.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGuardian1Relation.Location = new System.Drawing.Point(103, 53);
+            this.textBoxGuardian1Relation.Name = "textBoxGuardian1Relation";
+            this.textBoxGuardian1Relation.Size = new System.Drawing.Size(344, 27);
+            this.textBoxGuardian1Relation.TabIndex = 17;
+            // 
+            // textBoxGuardian1Street
+            // 
+            this.textBoxGuardian1Street.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxGuardian1Street.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGuardian1Street.Location = new System.Drawing.Point(103, 128);
+            this.textBoxGuardian1Street.Name = "textBoxGuardian1Street";
+            this.textBoxGuardian1Street.Size = new System.Drawing.Size(344, 27);
+            this.textBoxGuardian1Street.TabIndex = 18;
             // 
             // Form1
             // 
@@ -1446,13 +1456,13 @@ namespace GradedUnitProject
             this.tableLayoutPanel2.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.customTabControl2.ResumeLayout(false);
-            this.tabPage7.ResumeLayout(false);
-            this.tableLayoutPanel6.ResumeLayout(false);
-            this.tableLayoutPanel6.PerformLayout();
             this.tabPage8.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.tabPage7.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1471,7 +1481,7 @@ namespace GradedUnitProject
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBoxPlayerPosition;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
@@ -1480,15 +1490,15 @@ namespace GradedUnitProject
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBoxMemberName;
+        private System.Windows.Forms.TextBox textBoxMemberSRU;
+        private System.Windows.Forms.TextBox textBoxMemberEmail;
+        private System.Windows.Forms.TextBox textBoxMemberPhone;
+        private System.Windows.Forms.TextBox textBoxMemberMob;
+        private System.Windows.Forms.ComboBox comboBoxMemberType;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textBoxKinPhone;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
@@ -1496,16 +1506,14 @@ namespace GradedUnitProject
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.TextBox textBoxKinName;
+        private System.Windows.Forms.TextBox textBoxKinFlat;
+        private System.Windows.Forms.TextBox textBoxKinTown;
+        private System.Windows.Forms.TextBox textBoxKinPostcode;
         private CustomTabControl customTabControl2;
-        private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.TabPage tabPage8;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox textBoxDoctorPhone;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
@@ -1513,52 +1521,54 @@ namespace GradedUnitProject
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.TextBox textBoxDoctorName;
+        private System.Windows.Forms.TextBox textBoxDoctorFlat;
+        private System.Windows.Forms.TextBox textBoxDoctorTown;
+        private System.Windows.Forms.TextBox textBoxDoctorPostcode;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.DateTimePicker dateTimePicker5;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.TextBox textBoxMemberFlat;
+        private System.Windows.Forms.TextBox textBoxMemberTown;
+        private System.Windows.Forms.TextBox textBoxMemberPostcode;
+        private System.Windows.Forms.TextBox textBoxDoctorStreet;
+        private System.Windows.Forms.TextBox textBoxMemberStreet;
+        private System.Windows.Forms.TextBox textBoxKinStreet;
+        private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.TextBox textBoxGuardianPhone;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.TextBox textBox26;
+        private System.Windows.Forms.TextBox textBoxGuardianName;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.DateTimePicker dateTimePicker6;
-        private System.Windows.Forms.TextBox textBox29;
+        private System.Windows.Forms.TextBox textBoxGuardianPostcode;
+        private System.Windows.Forms.TextBox textBoxGuardianTown;
+        private System.Windows.Forms.TextBox textBoxGuardianFlat;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.TextBox textBox30;
+        private System.Windows.Forms.TextBox textBoxGuardianRelation;
+        private System.Windows.Forms.TextBox textBoxGuardianStreet;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.TextBox textBoxGuardian1Phone;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox textBoxGuardian1Name;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.TextBox textBoxGuardian1Postcode;
+        private System.Windows.Forms.TextBox textBoxGuardian1Twon;
+        private System.Windows.Forms.TextBox textBoxGuardian1Flat;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.TextBox textBoxGuardian1Relation;
+        private System.Windows.Forms.TextBox textBoxGuardian1Street;
     }
 }
