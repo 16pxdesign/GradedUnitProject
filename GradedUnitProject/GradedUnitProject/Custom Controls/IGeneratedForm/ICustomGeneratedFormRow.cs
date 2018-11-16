@@ -8,6 +8,6 @@ namespace GradedUnitProject.Custom_Controls.IGeneratedForm
 {
     public interface ICustomGeneratedFormRow
     {
-        ICustomGeneratedFormItem NewRow(String name);
+        ICustomGeneratedFormItem NewRow(String name, String description);
     }
 }

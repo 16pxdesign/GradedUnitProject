@@ -62,24 +62,9 @@ namespace GradedUnitProject.Custom_Controls
             return this;
         }
 
-        public ICustomGeneratedFormItem NewItem()
-        {
-            if (itemsInRow == 0)
-            {
-                itemsInRow = itemsInRow+1;
-            }
-            else
-            {
-                throw new Exception("Only one item per row");
-            }
-            
-
-            AddTextbox();
-
-            return this;
-        }
-
-        public ICustomGeneratedFormItem NewRow(String name)
+         
+        
+        public ICustomGeneratedFormItem NewRow(String name, String description)
         {
             itemsInRow = 0;
             this.row = new TableLayoutPanel();
@@ -107,30 +92,40 @@ namespace GradedUnitProject.Custom_Controls
             row.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             row.BackColor = Color.Yellow;
             framePanel.Controls.Add(row);
-            AddLabel();
-            return this;
-        }
+            
 
-        private void AddLabel()
-        {
             //label
             Label label = new Label();
-            //labelName.AutoSize = true;
+            label.AutoSize = true;
             label.Anchor = AnchorStyles.None;
             label.ForeColor = System.Drawing.Color.White;
             label.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             label.Location = new System.Drawing.Point(3, 11);
             label.Name = "label" + rowName;
-            label.Size = new System.Drawing.Size(70, 30);
+            label.Size = new System.Drawing.Size(200, 30);
             label.TabIndex = 0;
-//TODO: Chane Label description
-            label.Text = rowName;
+            label.Text = description;
             label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             row.Controls.Add(label, 0, 0);
+            return this;
         }
 
-        private void AddTextbox()
+        private void CheckForItemLimit()
         {
+            if (itemsInRow == 0)
+            {
+                itemsInRow = itemsInRow + 1;
+            }
+            else
+            {
+                throw new Exception("Only one item per row");
+            }
+        }
+
+        public ICustomGeneratedFormItem TextBox()
+        {
+            CheckForItemLimit();
+
             //Textbox
             TextBox textBox = new TextBox();
             textBox.Anchor = AnchorStyles.None;
@@ -140,7 +135,29 @@ namespace GradedUnitProject.Custom_Controls
             textBox.Name = "textBox" + rowName;
             textBox.Size = new System.Drawing.Size(200, 27);
             row.Controls.Add(textBox, 1, 0);
+
+            return this;
         }
+
+
+        public ICustomGeneratedFormItem ComboBox()
+        {
+            CheckForItemLimit();
+
+            //ComboBox
+            ComboBox textBox = new ComboBox();
+            textBox.Anchor = AnchorStyles.None;
+            textBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            textBox.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            textBox.Location = new System.Drawing.Point(103, 43);
+            textBox.Name = "comboBox" + rowName;
+            textBox.Size = new System.Drawing.Size(200, 27);
+            row.Controls.Add(textBox, 1, 0);
+
+            return this;
+        }
+
+
 
         public Boolean GetValue(String name)
         {
@@ -166,6 +183,8 @@ namespace GradedUnitProject.Custom_Controls
             }
             return false;
         }
+
+
     }
  
 }

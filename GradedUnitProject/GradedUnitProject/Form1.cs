@@ -19,9 +19,6 @@ namespace GradedUnitProject
             this.parentContext = parentContext;
 
 
-            fillForm1.AddTextBox("name");
-            fillForm1.AddTextBox("surname");
-            fillForm1.AddTextBox("SRU");
             
 
         }

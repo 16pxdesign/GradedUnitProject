@@ -17,20 +17,7 @@ namespace GradedUnitProject
         {
             InitializeComponent();
 
-            CustomGeneratedFormBuilder generatedForm = CustomGeneratedFormBuilder.Create()
-                .CreateFrame()
-                .NewRow("Name")
-                .NewItem()
-                .NewRow("Name")
-                .NewItem()
-                .NewRow("Name")
-                .NewItem()
-                .NewRow("Name")
-                .NewItem()
-                .NewRow("Name")
-                .NewItem()
-                .NewRow("Name")
-                .NewItem()
+            CustomGeneratedFormBuilder generatedForm = CustomGeneratedFormBuilder.Create().CreateFrame().NewRow().ComboBox().
                 .Build();
             generatedForm.Dock = DockStyle.Fill;
            this.Controls.Add(generatedForm);

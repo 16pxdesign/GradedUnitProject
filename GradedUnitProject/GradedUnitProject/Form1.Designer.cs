@@ -40,7 +40,7 @@ namespace GradedUnitProject
             this.buttonOK = new System.Windows.Forms.Button();
             this.customTabControl1 = new GradedUnitProject.CustomTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.fillForm1 = new GradedUnitProject.Custom_Controls.FillForm();
+
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.textBoxDoctorPhone = new System.Windows.Forms.TextBox();
@@ -267,7 +267,6 @@ namespace GradedUnitProject
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.tabPage1.Controls.Add(this.fillForm1);
             this.tabPage1.Location = new System.Drawing.Point(4, 54);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 3, 30, 3);
             this.tabPage1.Name = "tabPage1";
@@ -275,14 +274,7 @@ namespace GradedUnitProject
             this.tabPage1.Size = new System.Drawing.Size(898, 260);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "General";
-            // 
-            // fillForm1
-            // 
-            this.fillForm1.AutoSize = true;
-            this.fillForm1.Location = new System.Drawing.Point(6, 6);
-            this.fillForm1.Name = "fillForm1";
-            this.fillForm1.Size = new System.Drawing.Size(787, 248);
-            this.fillForm1.TabIndex = 0;
+            
             // 
             // tabPage2
             // 
@@ -1393,6 +1385,6 @@ namespace GradedUnitProject
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.Button buttonOK;
-        private Custom_Controls.FillForm fillForm1;
+
     }
 }

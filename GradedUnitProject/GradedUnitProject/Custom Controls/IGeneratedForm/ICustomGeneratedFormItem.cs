@@ -8,8 +8,9 @@ namespace GradedUnitProject.Custom_Controls.IGeneratedForm
 {
     public interface ICustomGeneratedFormItem
     {
-        ICustomGeneratedFormItem NewRow(String name);
-        ICustomGeneratedFormItem NewItem();
+        ICustomGeneratedFormItem NewRow(String name, String description);
+        ICustomGeneratedFormItem TextBox();
+        ICustomGeneratedFormItem ComboBox();
         CustomGeneratedFormBuilder Build();
     }
 }
