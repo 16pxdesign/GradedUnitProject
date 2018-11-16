@@ -17,7 +17,9 @@ namespace GradedUnitProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginPanel());
+            //Application.Run(new LoginPanel());
+            Application.Run(new Add());
+           // Application.Run(new test2());
             //Application.Run(new Form1());
         }
     }

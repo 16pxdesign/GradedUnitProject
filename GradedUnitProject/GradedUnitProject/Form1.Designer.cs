@@ -34,25 +34,13 @@ namespace GradedUnitProject
             this.closeBox = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.buttonCancel = new System.Windows.Forms.Button();
+            this.buttonOK = new System.Windows.Forms.Button();
             this.customTabControl1 = new GradedUnitProject.CustomTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBoxPlayerPosition = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBoxMemberName = new System.Windows.Forms.TextBox();
-            this.textBoxMemberSRU = new System.Windows.Forms.TextBox();
-            this.textBoxMemberEmail = new System.Windows.Forms.TextBox();
-            this.textBoxMemberPhone = new System.Windows.Forms.TextBox();
-            this.textBoxMemberMob = new System.Windows.Forms.TextBox();
-            this.comboBoxMemberType = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.fillForm1 = new GradedUnitProject.Custom_Controls.FillForm();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.textBoxDoctorPhone = new System.Windows.Forms.TextBox();
@@ -67,6 +55,7 @@ namespace GradedUnitProject
             this.textBoxDoctorFlat = new System.Windows.Forms.TextBox();
             this.textBoxDoctorTown = new System.Windows.Forms.TextBox();
             this.textBoxDoctorPostcode = new System.Windows.Forms.TextBox();
+            this.textBoxDoctorStreet = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label26 = new System.Windows.Forms.Label();
@@ -77,6 +66,7 @@ namespace GradedUnitProject
             this.textBoxMemberFlat = new System.Windows.Forms.TextBox();
             this.textBoxMemberTown = new System.Windows.Forms.TextBox();
             this.textBoxMemberPostcode = new System.Windows.Forms.TextBox();
+            this.textBoxMemberStreet = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.textBoxKinPhone = new System.Windows.Forms.TextBox();
@@ -91,14 +81,9 @@ namespace GradedUnitProject
             this.textBoxKinFlat = new System.Windows.Forms.TextBox();
             this.textBoxKinTown = new System.Windows.Forms.TextBox();
             this.textBoxKinPostcode = new System.Windows.Forms.TextBox();
+            this.textBoxKinStreet = new System.Windows.Forms.TextBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.customTabControl2 = new GradedUnitProject.CustomTabControl();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBoxDoctorStreet = new System.Windows.Forms.TextBox();
-            this.textBoxMemberStreet = new System.Windows.Forms.TextBox();
-            this.textBoxKinStreet = new System.Windows.Forms.TextBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.textBoxGuardianPhone = new System.Windows.Forms.TextBox();
@@ -116,6 +101,7 @@ namespace GradedUnitProject
             this.label44 = new System.Windows.Forms.Label();
             this.textBoxGuardianRelation = new System.Windows.Forms.TextBox();
             this.textBoxGuardianStreet = new System.Windows.Forms.TextBox();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.textBoxGuardian1Phone = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
@@ -132,11 +118,13 @@ namespace GradedUnitProject
             this.label36 = new System.Windows.Forms.Label();
             this.textBoxGuardian1Relation = new System.Windows.Forms.TextBox();
             this.textBoxGuardian1Street = new System.Windows.Forms.TextBox();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.closeBox)).BeginInit();
             this.panel1.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel8.SuspendLayout();
             this.customTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -145,10 +133,9 @@ namespace GradedUnitProject
             this.tableLayoutPanel2.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.customTabControl2.SuspendLayout();
-            this.tabPage8.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             this.tabPage7.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
+            this.tabPage8.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -161,6 +148,7 @@ namespace GradedUnitProject
             this.closeBox.Size = new System.Drawing.Size(20, 20);
             this.closeBox.TabIndex = 1;
             this.closeBox.TabStop = false;
+            this.closeBox.Click += new System.EventHandler(this.closeBox_Click);
             // 
             // label1
             // 
@@ -181,8 +169,82 @@ namespace GradedUnitProject
             this.panel1.Size = new System.Drawing.Size(1086, 46);
             this.panel1.TabIndex = 2;
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.customTabControl1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel8, 0, 2);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 46);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(10);
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.01855F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 89.98145F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1086, 594);
+            this.tableLayoutPanel1.TabIndex = 5;
+            // 
+            // tableLayoutPanel8
+            // 
+            this.tableLayoutPanel8.ColumnCount = 2;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Controls.Add(this.buttonCancel, 1, 0);
+            this.tableLayoutPanel8.Controls.Add(this.buttonOK, 0, 0);
+            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(13, 521);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 1;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(1060, 60);
+            this.tableLayoutPanel8.TabIndex = 5;
+            // 
+            // buttonCancel
+            // 
+            this.buttonCancel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonCancel.BackColor = System.Drawing.Color.Red;
+            this.buttonCancel.FlatAppearance.BorderSize = 0;
+            this.buttonCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(82)))), ((int)(((byte)(80)))));
+            this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCancel.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancel.ForeColor = System.Drawing.Color.White;
+            this.buttonCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCancel.Location = new System.Drawing.Point(755, 14);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.buttonCancel.Size = new System.Drawing.Size(80, 31);
+            this.buttonCancel.TabIndex = 4;
+            this.buttonCancel.Text = "Cancel";
+            this.buttonCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonCancel.UseVisualStyleBackColor = false;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
+            // 
+            // buttonOK
+            // 
+            this.buttonOK.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonOK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.buttonOK.FlatAppearance.BorderSize = 0;
+            this.buttonOK.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(82)))), ((int)(((byte)(80)))));
+            this.buttonOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonOK.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonOK.ForeColor = System.Drawing.Color.White;
+            this.buttonOK.Location = new System.Drawing.Point(225, 14);
+            this.buttonOK.Name = "buttonOK";
+            this.buttonOK.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.buttonOK.Size = new System.Drawing.Size(80, 31);
+            this.buttonOK.TabIndex = 3;
+            this.buttonOK.Text = "OK";
+            this.buttonOK.UseVisualStyleBackColor = false;
+            this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
+            // 
             // customTabControl1
             // 
+            this.customTabControl1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.customTabControl1.BackTabColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.customTabControl1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.customTabControl1.Controls.Add(this.tabPage1);
@@ -191,14 +253,13 @@ namespace GradedUnitProject
             this.customTabControl1.Controls.Add(this.tabPage4);
             this.customTabControl1.Controls.Add(this.tabPage5);
             this.customTabControl1.Controls.Add(this.tabPage6);
-            this.customTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.customTabControl1.ItemSize = new System.Drawing.Size(120, 50);
-            this.customTabControl1.Location = new System.Drawing.Point(13, 63);
+            this.customTabControl1.Location = new System.Drawing.Point(90, 130);
             this.customTabControl1.Name = "customTabControl1";
             this.customTabControl1.OverheaderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.customTabControl1.Padding = new System.Drawing.Point(0, 0);
             this.customTabControl1.SelectedIndex = 0;
-            this.customTabControl1.Size = new System.Drawing.Size(1060, 452);
+            this.customTabControl1.Size = new System.Drawing.Size(906, 318);
             this.customTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.customTabControl1.TabIndex = 4;
             this.customTabControl1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -206,228 +267,22 @@ namespace GradedUnitProject
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.tabPage1.Controls.Add(this.tableLayoutPanel3);
+            this.tabPage1.Controls.Add(this.fillForm1);
             this.tabPage1.Location = new System.Drawing.Point(4, 54);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 3, 30, 3);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1052, 394);
+            this.tabPage1.Size = new System.Drawing.Size(898, 260);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "General";
             // 
-            // tableLayoutPanel3
+            // fillForm1
             // 
-            this.tableLayoutPanel3.ColumnCount = 3;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel3.Controls.Add(this.comboBoxPlayerPosition, 1, 2);
-            this.tableLayoutPanel3.Controls.Add(this.label3, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label4, 0, 2);
-            this.tableLayoutPanel3.Controls.Add(this.label5, 0, 3);
-            this.tableLayoutPanel3.Controls.Add(this.label6, 0, 4);
-            this.tableLayoutPanel3.Controls.Add(this.label7, 0, 5);
-            this.tableLayoutPanel3.Controls.Add(this.label8, 0, 6);
-            this.tableLayoutPanel3.Controls.Add(this.label9, 0, 7);
-            this.tableLayoutPanel3.Controls.Add(this.textBoxMemberName, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.textBoxMemberSRU, 1, 3);
-            this.tableLayoutPanel3.Controls.Add(this.textBoxMemberEmail, 1, 5);
-            this.tableLayoutPanel3.Controls.Add(this.textBoxMemberPhone, 1, 6);
-            this.tableLayoutPanel3.Controls.Add(this.textBoxMemberMob, 1, 7);
-            this.tableLayoutPanel3.Controls.Add(this.comboBoxMemberType, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.dateTimePicker1, 1, 4);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 8;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(500, 200);
-            this.tableLayoutPanel3.TabIndex = 1;
-            // 
-            // comboBoxPlayerPosition
-            // 
-            this.comboBoxPlayerPosition.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxPlayerPosition.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxPlayerPosition.FormattingEnabled = true;
-            this.comboBoxPlayerPosition.Location = new System.Drawing.Point(103, 53);
-            this.comboBoxPlayerPosition.Name = "comboBoxPlayerPosition";
-            this.comboBoxPlayerPosition.Size = new System.Drawing.Size(344, 26);
-            this.comboBoxPlayerPosition.TabIndex = 14;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(12, 25);
-            this.label3.Margin = new System.Windows.Forms.Padding(3, 0, 10, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 25);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Member Type";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(37, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(3, 0, 10, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 25);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Full name";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(16, 53);
-            this.label4.Margin = new System.Windows.Forms.Padding(3, 0, 10, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 18);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Position";
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(43, 78);
-            this.label5.Margin = new System.Windows.Forms.Padding(3, 0, 10, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 18);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "SRU ";
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(46, 103);
-            this.label6.Margin = new System.Windows.Forms.Padding(3, 0, 10, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 18);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "DOB";
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(37, 128);
-            this.label7.Margin = new System.Windows.Forms.Padding(3, 0, 10, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 18);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Email";
-            // 
-            // label8
-            // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(32, 153);
-            this.label8.Margin = new System.Windows.Forms.Padding(3, 0, 10, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 18);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "Phone";
-            // 
-            // label9
-            // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(29, 178);
-            this.label9.Margin = new System.Windows.Forms.Padding(3, 0, 10, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(61, 18);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "Mobile";
-            // 
-            // textBoxMemberName
-            // 
-            this.textBoxMemberName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxMemberName.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMemberName.Location = new System.Drawing.Point(103, 3);
-            this.textBoxMemberName.Name = "textBoxMemberName";
-            this.textBoxMemberName.Size = new System.Drawing.Size(344, 27);
-            this.textBoxMemberName.TabIndex = 8;
-            // 
-            // textBoxMemberSRU
-            // 
-            this.textBoxMemberSRU.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxMemberSRU.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMemberSRU.Location = new System.Drawing.Point(103, 78);
-            this.textBoxMemberSRU.Name = "textBoxMemberSRU";
-            this.textBoxMemberSRU.Size = new System.Drawing.Size(344, 27);
-            this.textBoxMemberSRU.TabIndex = 9;
-            // 
-            // textBoxMemberEmail
-            // 
-            this.textBoxMemberEmail.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxMemberEmail.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMemberEmail.Location = new System.Drawing.Point(103, 128);
-            this.textBoxMemberEmail.Name = "textBoxMemberEmail";
-            this.textBoxMemberEmail.Size = new System.Drawing.Size(344, 27);
-            this.textBoxMemberEmail.TabIndex = 10;
-            // 
-            // textBoxMemberPhone
-            // 
-            this.textBoxMemberPhone.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxMemberPhone.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMemberPhone.Location = new System.Drawing.Point(103, 153);
-            this.textBoxMemberPhone.Name = "textBoxMemberPhone";
-            this.textBoxMemberPhone.Size = new System.Drawing.Size(344, 27);
-            this.textBoxMemberPhone.TabIndex = 11;
-            // 
-            // textBoxMemberMob
-            // 
-            this.textBoxMemberMob.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxMemberMob.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMemberMob.Location = new System.Drawing.Point(103, 178);
-            this.textBoxMemberMob.Name = "textBoxMemberMob";
-            this.textBoxMemberMob.Size = new System.Drawing.Size(344, 27);
-            this.textBoxMemberMob.TabIndex = 12;
-            // 
-            // comboBoxMemberType
-            // 
-            this.comboBoxMemberType.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxMemberType.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxMemberType.FormattingEnabled = true;
-            this.comboBoxMemberType.Location = new System.Drawing.Point(103, 28);
-            this.comboBoxMemberType.Name = "comboBoxMemberType";
-            this.comboBoxMemberType.Size = new System.Drawing.Size(344, 26);
-            this.comboBoxMemberType.TabIndex = 13;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(103, 103);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(344, 27);
-            this.dateTimePicker1.TabIndex = 15;
+            this.fillForm1.AutoSize = true;
+            this.fillForm1.Location = new System.Drawing.Point(6, 6);
+            this.fillForm1.Name = "fillForm1";
+            this.fillForm1.Size = new System.Drawing.Size(787, 248);
+            this.fillForm1.TabIndex = 0;
             // 
             // tabPage2
             // 
@@ -436,7 +291,7 @@ namespace GradedUnitProject
             this.tabPage2.Location = new System.Drawing.Point(4, 54);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1052, 394);
+            this.tabPage2.Size = new System.Drawing.Size(898, 260);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Doctor";
             // 
@@ -609,6 +464,15 @@ namespace GradedUnitProject
             this.textBoxDoctorPostcode.Size = new System.Drawing.Size(344, 27);
             this.textBoxDoctorPostcode.TabIndex = 11;
             // 
+            // textBoxDoctorStreet
+            // 
+            this.textBoxDoctorStreet.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxDoctorStreet.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxDoctorStreet.Location = new System.Drawing.Point(103, 115);
+            this.textBoxDoctorStreet.Name = "textBoxDoctorStreet";
+            this.textBoxDoctorStreet.Size = new System.Drawing.Size(344, 27);
+            this.textBoxDoctorStreet.TabIndex = 12;
+            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
@@ -616,7 +480,7 @@ namespace GradedUnitProject
             this.tabPage3.Location = new System.Drawing.Point(4, 54);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1052, 394);
+            this.tabPage3.Size = new System.Drawing.Size(898, 260);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Address";
             // 
@@ -740,6 +604,15 @@ namespace GradedUnitProject
             this.textBoxMemberPostcode.Size = new System.Drawing.Size(344, 27);
             this.textBoxMemberPostcode.TabIndex = 11;
             // 
+            // textBoxMemberStreet
+            // 
+            this.textBoxMemberStreet.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxMemberStreet.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMemberStreet.Location = new System.Drawing.Point(103, 83);
+            this.textBoxMemberStreet.Name = "textBoxMemberStreet";
+            this.textBoxMemberStreet.Size = new System.Drawing.Size(344, 27);
+            this.textBoxMemberStreet.TabIndex = 12;
+            // 
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
@@ -747,7 +620,7 @@ namespace GradedUnitProject
             this.tabPage4.Location = new System.Drawing.Point(4, 54);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1052, 394);
+            this.tabPage4.Size = new System.Drawing.Size(898, 260);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Kin";
             // 
@@ -919,6 +792,15 @@ namespace GradedUnitProject
             this.textBoxKinPostcode.Size = new System.Drawing.Size(344, 27);
             this.textBoxKinPostcode.TabIndex = 11;
             // 
+            // textBoxKinStreet
+            // 
+            this.textBoxKinStreet.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxKinStreet.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxKinStreet.Location = new System.Drawing.Point(103, 115);
+            this.textBoxKinStreet.Name = "textBoxKinStreet";
+            this.textBoxKinStreet.Size = new System.Drawing.Size(344, 27);
+            this.textBoxKinStreet.TabIndex = 12;
+            // 
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
@@ -926,7 +808,7 @@ namespace GradedUnitProject
             this.tabPage5.Location = new System.Drawing.Point(4, 54);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1052, 394);
+            this.tabPage5.Size = new System.Drawing.Size(898, 260);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Guardian";
             // 
@@ -945,72 +827,6 @@ namespace GradedUnitProject
             this.customTabControl2.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.customTabControl2.TabIndex = 0;
             this.customTabControl2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.tabPage8.Controls.Add(this.tableLayoutPanel6);
-            this.tabPage8.Location = new System.Drawing.Point(4, 54);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(601, 245);
-            this.tabPage8.TabIndex = 1;
-            this.tabPage8.Text = "Secondary";
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.tabPage6.Location = new System.Drawing.Point(4, 54);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1052, 394);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Health Issue";
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.customTabControl1, 0, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 46);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(10);
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.01855F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 89.98145F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1086, 594);
-            this.tableLayoutPanel1.TabIndex = 5;
-            // 
-            // textBoxDoctorStreet
-            // 
-            this.textBoxDoctorStreet.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxDoctorStreet.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxDoctorStreet.Location = new System.Drawing.Point(103, 115);
-            this.textBoxDoctorStreet.Name = "textBoxDoctorStreet";
-            this.textBoxDoctorStreet.Size = new System.Drawing.Size(344, 27);
-            this.textBoxDoctorStreet.TabIndex = 12;
-            // 
-            // textBoxMemberStreet
-            // 
-            this.textBoxMemberStreet.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxMemberStreet.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMemberStreet.Location = new System.Drawing.Point(103, 83);
-            this.textBoxMemberStreet.Name = "textBoxMemberStreet";
-            this.textBoxMemberStreet.Size = new System.Drawing.Size(344, 27);
-            this.textBoxMemberStreet.TabIndex = 12;
-            // 
-            // textBoxKinStreet
-            // 
-            this.textBoxKinStreet.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxKinStreet.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxKinStreet.Location = new System.Drawing.Point(103, 115);
-            this.textBoxKinStreet.Name = "textBoxKinStreet";
-            this.textBoxKinStreet.Size = new System.Drawing.Size(344, 27);
-            this.textBoxKinStreet.TabIndex = 12;
             // 
             // tabPage7
             // 
@@ -1225,6 +1041,17 @@ namespace GradedUnitProject
             this.textBoxGuardianStreet.Size = new System.Drawing.Size(344, 27);
             this.textBoxGuardianStreet.TabIndex = 18;
             // 
+            // tabPage8
+            // 
+            this.tabPage8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.tabPage8.Controls.Add(this.tableLayoutPanel6);
+            this.tabPage8.Location = new System.Drawing.Point(4, 54);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(601, 245);
+            this.tabPage8.TabIndex = 1;
+            this.tabPage8.Text = "Secondary";
+            // 
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.ColumnCount = 3;
@@ -1427,6 +1254,16 @@ namespace GradedUnitProject
             this.textBoxGuardian1Street.Size = new System.Drawing.Size(344, 27);
             this.textBoxGuardian1Street.TabIndex = 18;
             // 
+            // tabPage6
+            // 
+            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.tabPage6.Location = new System.Drawing.Point(4, 54);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(898, 260);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Health Issue";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1441,10 +1278,11 @@ namespace GradedUnitProject
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.closeBox)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel8.ResumeLayout(false);
             this.customTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
+            this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
@@ -1456,11 +1294,10 @@ namespace GradedUnitProject
             this.tableLayoutPanel2.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.customTabControl2.ResumeLayout(false);
-            this.tabPage8.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
+            this.tabPage8.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
             this.ResumeLayout(false);
@@ -1480,23 +1317,6 @@ namespace GradedUnitProject
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.ComboBox comboBoxPlayerPosition;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBoxMemberName;
-        private System.Windows.Forms.TextBox textBoxMemberSRU;
-        private System.Windows.Forms.TextBox textBoxMemberEmail;
-        private System.Windows.Forms.TextBox textBoxMemberPhone;
-        private System.Windows.Forms.TextBox textBoxMemberMob;
-        private System.Windows.Forms.ComboBox comboBoxMemberType;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TextBox textBoxKinPhone;
         private System.Windows.Forms.Label label10;
@@ -1570,5 +1390,9 @@ namespace GradedUnitProject
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.TextBox textBoxGuardian1Relation;
         private System.Windows.Forms.TextBox textBoxGuardian1Street;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
+        private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.Button buttonOK;
+        private Custom_Controls.FillForm fillForm1;
     }
 }

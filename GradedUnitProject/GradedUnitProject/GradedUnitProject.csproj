@@ -72,12 +72,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Custom Controls\CustomDataGrid6.cs">
+    <Compile Include="Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add.Designer.cs">
+      <DependentUpon>Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\CustomDataGrid.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\CustomGeneratedFormBuilder.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Custom Controls\CustomTabControl.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Custom Controls\IGeneratedForm\ICustomGeneratedFormFrame.cs" />
+    <Compile Include="Custom Controls\IGeneratedForm\ICustomGeneratedFormItem.cs" />
+    <Compile Include="Custom Controls\IGeneratedForm\ICustomGeneratedFormRow.cs" />
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +130,9 @@
     <Compile Include="UserManage.Designer.cs">
       <DependentUpon>UserManage.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Add.resx">
+      <DependentUpon>Add.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
